@@ -1,0 +1,31 @@
+@import './general.css';
+
+/* scrollbar light */
+
+::-webkit-scrollbar {
+    background-color: var(--light);
+    transition: background-color var(--mode-switch-duration) ease;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--tertiaryLight);
+    transition: background-color var(--mode-switch-duration) ease;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--secondaryLight);
+  }
+  
+  /* scrollbar dark */
+  
+  .dark::-webkit-scrollbar {
+    background-color: var(--secondaryDark);
+  }
+  
+  .dark::-webkit-scrollbar-thumb {
+    background-color: var(--darkOverPrimaryDark);
+  }
+  
+  .dark::-webkit-scrollbar-thumb:hover {
+    background-color: var(--light);
+  }

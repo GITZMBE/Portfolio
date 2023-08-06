@@ -1,0 +1,27 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import './scrollbar.css';
+
+@layer utilities {
+  .clip-house {
+    clip-path: polygon(0 15%, 60% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
+  }
+
+  .clip-parallelogram {
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%, 0 0);
+  }
+}
+
+/* * {
+  @apply m-0 p-0 box-border;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
