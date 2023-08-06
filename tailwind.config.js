@@ -10,13 +10,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      width: {
-        "80vw": "80vw",
-      },
       height: {
         headerOffset: "4rem",
         5.5: "1.375rem",
-        "80vh": "80vh",
       },
       margin: {
         headerOffset: "4rem",

@@ -27,7 +27,7 @@ function Header() {
   return (
     <header
       style={headerStyle}
-      className='fixed top-0 flex justify-between items-center w-full h-headerOffset py-0 px-20 bg-primaryLight transition-all duration-modeSwitchDuration ease-in-out z-1 dark:bg-primaryDark'
+      className='fixed top-0 flex justify-between items-center w-full h-headerOffset py-0 px-20 bg-primaryLight transitioning z-1 dark:bg-primaryDark'
     >
       <h1 className='text-dark text-2xl transition-all duration-modeSwitchDuration ease-in-out cursor-default dark:text-lightOverPrimaryDark'>
         Portfolio
