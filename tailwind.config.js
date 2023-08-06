@@ -16,6 +16,7 @@ module.exports = {
       },
       margin: {
         headerOffset: "4rem",
+        "10vh": "10vh",
       },
       padding: {
         headerOffset: "4rem",

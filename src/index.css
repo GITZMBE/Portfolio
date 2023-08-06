@@ -13,16 +13,21 @@
   }
 
   .clip-house {
-    clip-path: polygon(0 15%, 60% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(0 15vh, 60% 0, 100% 15vh, 100% 100%, 0 100%, 0 15vh);
   }
 
   .clip-parallelogram {
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%, 0 0);
   }
 
-  .grid-portfolio-template-desktop {
+  .grid-about-template-desktop {
     grid-template-columns: 100%;
     grid-auto-rows: 25vh;
+  }
+
+  .grid-about-template-mobile {
+    grid-template-columns: 100%;
+    grid-auto-rows: 50vh;
   }
 }
 
