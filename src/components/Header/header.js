@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 import DarkModeBtn from "./Mode/mode-btn";
 
 function Header() {
@@ -27,18 +28,18 @@ function Header() {
   return (
     <header
       style={headerStyle}
-      className='fixed top-0 flex justify-between items-center w-full h-headerOffset py-0 px-20 bg-primaryLight transitioning z-1 dark:bg-primaryDark'
+      className='fixed top-0 flex justify-between items-center w-full h-headerOffset py-0 px-4 sm:px-8 lg:px-20 bg-primaryLight transitioning z-1 dark:bg-primaryDark'
     >
-      <h1 className='text-dark text-2xl transition-all duration-modeSwitchDuration ease-in-out cursor-default dark:text-lightOverPrimaryDark'>
+      <h1 className='text-dark text-2xl transitioning cursor-default dark:text-lightOverPrimaryDark'>
         Portfolio
       </h1>
       <nav>
-        <ul className='flex gap-4 list-none font-semibold'>
+        <ul className='hidden gap-4 list-none font-semibold lg:flex'>
           <li>
             <a
               href='#home-container'
               target='_self'
-              className='decoration-0 text-overPrimaryLight p-2 transition-all duration-modeSwitchDuration ease-in-out hover:text-dark hover:cursor-pointer dark:text-darkOverPrimaryDark dark:hover:text-lightOverPrimaryDark'
+              // className='decoration-0 text-overPrimaryLight p-2 transitioning hover:text-dark hover:cursor-pointer dark:text-darkOverPrimaryDark dark:hover:text-lightOverPrimaryDark'
             >
               Home
             </a>
@@ -47,7 +48,7 @@ function Header() {
             <a
               href='#about-container'
               target='_self'
-              className='decoration-0 text-overPrimaryLight p-2 transition-all duration-modeSwitchDuration ease-in-out hover:text-dark hover:cursor-pointer dark:text-darkOverPrimaryDark dark:hover:text-lightOverPrimaryDark'
+              // className='decoration-0 text-overPrimaryLight p-2 transitioning hover:text-dark hover:cursor-pointer dark:text-darkOverPrimaryDark dark:hover:text-lightOverPrimaryDark'
             >
               About
             </a>
@@ -56,7 +57,7 @@ function Header() {
             <a
               href='#skills-container'
               target='_self'
-              className='decoration-0 text-overPrimaryLight p-2 transition-all duration-modeSwitchDuration ease-in-out hover:text-dark hover:cursor-pointer dark:text-darkOverPrimaryDark dark:hover:text-lightOverPrimaryDark'
+              // className='decoration-0 text-overPrimaryLight p-2 transitioning hover:text-dark hover:cursor-pointer dark:text-darkOverPrimaryDark dark:hover:text-lightOverPrimaryDark'
             >
               Skills
             </a>
@@ -65,7 +66,7 @@ function Header() {
             <a
               href='#portfolio-container'
               target='_self'
-              className='decoration-0 text-overPrimaryLight p-2 transition-all duration-modeSwitchDuration ease-in-out hover:text-dark hover:cursor-pointer dark:text-darkOverPrimaryDark dark:hover:text-lightOverPrimaryDark'
+              // className='decoration-0 text-overPrimaryLight p-2 transitioning hover:text-dark hover:cursor-pointer dark:text-darkOverPrimaryDark dark:hover:text-lightOverPrimaryDark'
             >
               Portfolio
             </a>
@@ -74,14 +75,20 @@ function Header() {
             <a
               href='#contact-container'
               target='_self'
-              className='decoration-0 text-overPrimaryLight p-2 transition-all duration-modeSwitchDuration ease-in-out hover:text-dark hover:cursor-pointer dark:text-darkOverPrimaryDark dark:hover:text-lightOverPrimaryDark'
+              // className='decoration-0 text-overPrimaryLight p-2 transitioning hover:text-dark hover:cursor-pointer dark:text-darkOverPrimaryDark dark:hover:text-lightOverPrimaryDark'
             >
               Contact
             </a>
           </li>
         </ul>
       </nav>
-      <DarkModeBtn />
+      <div className='flex gap-8'>
+        <DarkModeBtn />
+        <AiOutlineMenu
+          size={22}
+          className='fill-overPrimaryLight hover:fill-dark dark:fill-lightOverPrimaryDark dark:hover:fill-darkOverPrimaryDark transioning cursor-pointer lg:hidden'
+        />
+      </div>
     </header>
   );
 }

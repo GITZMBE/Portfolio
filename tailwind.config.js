@@ -12,11 +12,9 @@ module.exports = {
     extend: {
       height: {
         headerOffset: "4rem",
-        5.5: "1.375rem",
       },
       margin: {
         headerOffset: "4rem",
-        "10vh": "10vh",
       },
       padding: {
         headerOffset: "4rem",
@@ -46,6 +44,12 @@ module.exports = {
         overSecondaryLight: "#00000050",
         overDark: "#DFDFDF",
         // dark
+        darkOverPrimaryDark: "#FFFFFF90",
+        lightOverPrimaryDark: "#FFFFFF",
+      },
+      fill: {
+        dark: "#000000",
+        overPrimaryLight: "#00000090",
         darkOverPrimaryDark: "#FFFFFF90",
         lightOverPrimaryDark: "#FFFFFF",
       },

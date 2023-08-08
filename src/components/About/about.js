@@ -9,7 +9,7 @@ function About() {
       >
         <h2
           id='about-title'
-          className='text-center py-4 mt-10vh sm:text-start text-3xl font-medium uppercase transitioning cursor-default dark:text-light'
+          className='text-center py-4 mt-[10vh] sm:text-start text-3xl font-medium uppercase transitioning cursor-default dark:text-light'
         >
           About <span className='italic'>(Interests)</span>
         </h2>
@@ -24,10 +24,10 @@ function About() {
               className='md:w-2/5 w-full h-1/2 md:h-full object-cover object-center'
             />
             <div id='grid-item' className='flex flex-col w-full h-fit md:px-4'>
-              <h3 id='item-title' className='text-2xl font-bold transitioning dark:text-light'>
+              <h3 id='item-title' className='text-2xl font-bold transitioning dark:text-light py-2'>
                 Rubix cube
               </h3>
-              <p className='py-2 text-xl font-medium transitioning text-light'>
+              <p className='py-2 text-xl font-medium transitioning dark:text-light max-h-[180px] overflow-hidden'>
                 The Rubik's Cube is a 3D combination puzzle invented in 1974 by
                 Ernő Rubik. It challenges players to solve by aligning the
                 colors on each face. It remains a popular brain-teaser
@@ -42,10 +42,10 @@ function About() {
               className='md:w-2/5 w-full h-1/2 md:h-full object-cover object-center'
             />
             <div id='grid-item' className='flex flex-col w-full h-fit md:px-4'>
-              <h3 id='item-title' className='text-2xl font-bold transitioning dark:text-light'>
+              <h3 id='item-title' className='text-2xl font-bold transitioning dark:text-light py-2'>
                 Web development
               </h3>
-              <p className='py-2 text-xl font-medium transitioning text-light'>
+              <p className='py-2 text-xl font-medium transitioning dark:text-light max-h-[180px] overflow-hidden'>
                 Web development is the process of building and maintaining
                 websites and web applications. It involves frontend{" "}
                 <span className='italic'>(HTML, CSS, JavaScript)</span> and
@@ -62,10 +62,10 @@ function About() {
               className='md:w-2/5 w-full h-1/2 md:h-full object-cover object-center'
             />
             <div id='grid-item' className='flex flex-col w-full h-fit md:px-4'>
-              <h3 id='item-title' className='text-2xl font-bold transitioning dark:text-light'>
+              <h3 id='item-title' className='text-2xl font-bold transitioning dark:text-light py-2'>
                 Gymnastics
               </h3>
-              <p className='py-2 text-xl font-medium transitioning text-light'>
+              <p className='py-2 text-xl font-medium transitioning dark:text-light max-h-[180px] overflow-hidden'>
                 Gymnastics is a dynamic and challenging sport that showcases
                 strength, flexibility, body control and grace. Athletes perform
                 a series of acrobatic movements, jumps, and flips on various

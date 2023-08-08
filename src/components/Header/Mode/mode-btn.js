@@ -45,7 +45,7 @@ function DarkModeBtn() {
       <label
         htmlFor='mode'
         id='mode-btn'
-        className='relative h-5.5 aspect-dubble bg-tertiaryLight transition-all duration-modeSwitchDuration ease-in-out p-buttonPadding rounded-xl cursor-pointer hover:bg-overSecondaryLight dark:bg-darkOverPrimaryDark dark:hover:bg-light'
+        className='relative h-[1.375rem] aspect-dubble bg-tertiaryLight transition-all duration-modeSwitchDuration ease-in-out p-buttonPadding rounded-xl cursor-pointer hover:bg-overSecondaryLight dark:bg-darkOverPrimaryDark dark:hover:bg-light'
       >
         <div
           id='mode-btn-circle'

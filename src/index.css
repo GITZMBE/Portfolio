@@ -34,5 +34,9 @@
 @layer base {
   * {
     @apply m-0 p-0 box-border;
-  }  
+  }
+
+  a {
+    @apply decoration-0 text-overPrimaryLight p-2 transitioning hover:text-dark cursor-pointer dark:text-darkOverPrimaryDark dark:hover:text-lightOverPrimaryDark;
+  }
 }
