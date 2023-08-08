@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ResponsiveNav from "./Responsive-nav/responsive-nav";
-import { AiOutlineMenu } from "react-icons/ai";
-import { DiJsBadge } from "react-icons/di";
+import { AiOutlineMenu, AiFillFolderOpen } from "react-icons/ai";
 import DarkModeBtn from "./Mode/mode-btn";
 
 function Header() {
@@ -40,7 +39,7 @@ function Header() {
       className='fixed top-0 flex justify-between items-center w-full h-headerOffset py-0 px-4 sm:px-8 lg:px-20 bg-primaryLight transitioning z-1 dark:bg-primaryDark'
     >
       <h1 className='flex items-center gap-4 text-dark text-2xl transitioning cursor-default dark:text-lightOverPrimaryDark'>
-        <DiJsBadge
+        <AiFillFolderOpen
           size={36}
           className='fill-overSecondaryLight dark:fill-lightOverPrimaryDark'
         />

@@ -43,6 +43,7 @@ module.exports = {
         overPrimaryLight: "#00000090",
         overSecondaryLight: "#00000050",
         overDark: "#DFDFDF",
+        quaternaryLight: "#AAAAAA",
         // dark
         darkOverPrimaryDark: "#FFFFFF90",
         lightOverPrimaryDark: "#FFFFFF",

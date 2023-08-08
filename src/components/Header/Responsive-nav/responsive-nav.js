@@ -73,25 +73,25 @@ function ResponsiveNav() {
           <div className='flex justify-center gap-12 py-4'>
             <a
               href=''
-              className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight cursor-pointer'
+              className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <RxGithubLogo size={22} className='' />
             </a>
             <a
               href=''
-              className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight cursor-pointer'
+              className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <BiLogoLinkedin size={22} />
             </a>
             <a
               href=''
-              className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight cursor-pointer'
+              className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <AiOutlineMail size={22} />
             </a>
             <a
               href=''
-              className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight cursor-pointer'
+              className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <BiSolidContact size={22} />
             </a>
