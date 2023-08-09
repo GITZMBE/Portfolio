@@ -24,7 +24,7 @@ function ResponsiveNav() {
               className='fill-[#61DBFB] dark:fill-[#08B6CE]'
             />
             <a
-              href=''
+              href='#home-container'
               className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight cursor-pointer'
             >
               <AiOutlineClose
@@ -72,25 +72,25 @@ function ResponsiveNav() {
           </p>
           <div className='flex justify-center gap-12 py-4'>
             <a
-              href=''
+              href='https://github.com/GITZMBE?tab=repositories'
               className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <RxGithubLogo size={22} className='' />
             </a>
             <a
-              href=''
+              href='https://www.linkedin.com/feed/'
               className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <BiLogoLinkedin size={22} />
             </a>
             <a
-              href=''
+              href='mailto:lucasfilip@hotmail.se'
               className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <AiOutlineMail size={22} />
             </a>
             <a
-              href=''
+              href='#contact-container'
               className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <BiSolidContact size={22} />

@@ -36,7 +36,14 @@
     @apply m-0 p-0 box-border;
   }
 
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-button,
+  ::-webkit-scrollbar-track {
+    @apply transitioning;
+  }
+
   a {
-    @apply decoration-0 text-overPrimaryLight p-2 transitioning hover:text-dark cursor-pointer dark:text-darkOverPrimaryDark dark:hover:text-lightOverPrimaryDark;
+    @apply decoration-0 text-overPrimaryLight transitioning hover:text-dark cursor-pointer dark:text-darkOverPrimaryDark dark:hover:text-lightOverPrimaryDark;
   }
 }

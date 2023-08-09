@@ -5,7 +5,7 @@ function About() {
     <>
       <div
         id='about-container'
-        className='flex flex-col justify-start w-full min-h-screen py-headerOffset px-4 md:px-12 bg-tertiaryLight clip-house transitioning dark:bg-tertiaryDark'
+        className='flex flex-col justify-start w-full min-h-screen py-headerOffset mt-headerOffset px-4 md:px-12 bg-tertiaryLight clip-house transitioning dark:bg-tertiaryDark'
       >
         <h2
           id='about-title'

@@ -41,7 +41,7 @@ function Header() {
       <h1 className='flex items-center gap-4 text-dark text-2xl transitioning cursor-default dark:text-lightOverPrimaryDark'>
         <AiFillFolderOpen
           size={36}
-          className='fill-overSecondaryLight dark:fill-lightOverPrimaryDark'
+          className='fill-overSecondaryLight dark:fill-lightOverPrimaryDark transitioning'
         />
         Portfolio
       </h1>
