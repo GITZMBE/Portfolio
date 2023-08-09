@@ -56,7 +56,7 @@ function Footer() {
           <h2 className='w-12 py-2 font-bold uppercase text-dark border-b-2 border-b-[#61DBFB] dark:border-b-[#08B6CE] dark:text-lightOverPrimaryDark transitioning'>
             Follow&nbsp;Me
           </h2>
-          <div className='w-full md:w-fit flex flex-wrap justify-center lg:justify-start gap-4 py-2'>
+          <div className='w-full h-full md:w-fit md:h-fit flex flex-wrap justify-center items-center lg:justify-start gap-4 py-2'>
             <a
               href='https://facebook.com'
               className='group p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'

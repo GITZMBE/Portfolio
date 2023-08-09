@@ -70,7 +70,7 @@ function ResponsiveNav() {
           <p className='text-xl text-[#61DBFB] dark:text-[#08B6CE] cursor-default'>
             Let's Connect!
           </p>
-          <div className='flex justify-center gap-12 py-4'>
+          <div className='flex justify-center gap-4 sm:gap-12 py-4'>
             <a
               href='https://github.com/GITZMBE?tab=repositories'
               className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
