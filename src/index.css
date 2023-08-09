@@ -29,6 +29,10 @@
     grid-template-columns: 100%;
     grid-auto-rows: 50vh;
   }
+
+  .skill-icon {
+    @apply lg:w-[130px] lg:h-[130px] text-light dark:text-dark fill-light dark:fill-dark bg-gradient-to-r rounded-lg transitioning;
+  }
 }
 
 @layer base {
