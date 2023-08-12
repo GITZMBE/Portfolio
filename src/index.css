@@ -50,4 +50,8 @@
   a {
     @apply decoration-0 text-overPrimaryLight transitioning hover:text-dark cursor-pointer dark:text-darkOverPrimaryDark dark:hover:text-lightOverPrimaryDark;
   }
+
+  img {
+    @apply object-cover object-center;
+  }
 }
