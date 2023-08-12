@@ -85,10 +85,21 @@ module.exports = {
             right: 'auto'
           }
         },
+        show: {
+          "from": {
+            transform: 'translateY(-100px)',
+            opacity: 0,
+          },
+          "to": {
+            transform: 'translateY(0)',
+            opacity: 1,
+          }
+        }
       },
       animation: {
-        toDark: 'toDark 300ms ease-in-out forwards',
-        toLight: 'toLight 300ms ease-in-out forwards',
+        toDark: 'toDark modeSwitchDuration ease-in-out forwards',
+        toLight: 'toLight modeSwitchDuration ease-in-out forwards',
+        show: 'show 700ms ease-in-out forwards',
       },
     },
   },

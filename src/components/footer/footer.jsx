@@ -11,7 +11,7 @@ function Footer() {
           <h2 className='w-12 py-2 font-bold uppercase text-dark border-b-2 border-b-[#61DBFB] dark:border-b-[#08B6CE] dark:text-lightOverPrimaryDark transitioning'>
             Company
           </h2>
-          <ul className='flex flex-col gap-2 py-2 font-bold'>
+          <ul className='flex flex-col leading-8 py-2 font-bold'>
             <li>
               <a href='#home'>About</a>
             </li>
@@ -27,7 +27,7 @@ function Footer() {
           <h2 className='w-12 py-2 font-bold uppercase text-dark border-b-2 border-b-[#61DBFB] dark:border-b-[#08B6CE] dark:text-lightOverPrimaryDark transitioning'>
             Get&nbsp;Help
           </h2>
-          <ul className='flex flex-col gap-2 py-2 font-bold'>
+          <ul className='flex flex-col leading-8 py-2 font-bold'>
             <li>
               <a href='#home'>FAQ</a>
             </li>
@@ -43,7 +43,7 @@ function Footer() {
           <h2 className='w-12 py-2 font-bold uppercase text-dark border-b-2 border-b-[#61DBFB] dark:border-b-[#08B6CE] dark:text-lightOverPrimaryDark transitioning'>
             Shop
           </h2>
-          <ul className='flex flex-col gap-2 py-2 font-bold'>
+          <ul className='flex flex-col leading-8 py-2 font-bold'>
             <li>
               <a href='#home'>View</a>
             </li>
@@ -59,7 +59,7 @@ function Footer() {
           <div className='w-full h-full md:w-fit md:h-fit flex flex-wrap justify-center items-center lg:justify-start gap-4 py-2'>
             <a
               href='https://facebook.com'
-              className='group p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
+              className='group p-4 rounded-full shadow-lg hover:text-[#3b5998] dark:hover:text-[#3b5998] hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <BiLogoFacebook size={22} />
             </a>
@@ -71,13 +71,13 @@ function Footer() {
             </a>
             <a
               href='https://facebook.com'
-              className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
+              className='p-4 rounded-full shadow-lg hover:text-[#f16623] dark:hover:text-[#f16623] hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <BiSolidContact size={22} />
             </a>
             <a
               href='https://facebook.com'
-              className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
+              className='p-4 rounded-full shadow-lg hover:text-[#620296] dark:hover:text-[#a304fa] hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <RxGithubLogo size={22} />
             </a>

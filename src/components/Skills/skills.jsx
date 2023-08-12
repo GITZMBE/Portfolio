@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { BiLogoCss3, BiLogoReact, BiLogoJavascript, BiLogoAngular, BiLogoTailwindCss, BiLogoGit } from 'react-icons/bi';
 import { RxGithubLogo } from 'react-icons/rx';
 import Skill from './Skill/skill';
 
 function Skills() {
+  useEffect(() => {
+    window.addEventListener('scroll', (e) => {
+      const skills = document.getElementById('skills');
+      const skillsRect = skills.getBoundingClientRect();
+      const visible = (skillsRect.top - window.innerHeight + skillsRect.height / 2);
+      visible < 0 && skills.classList.add('animate-show');
+      // visible < 0 ? skills.style.opacity = 1 : skills.style.opacity = 0;
+      // visible < 0 ? skills.classList.add('animate-show') : null;
+      
+      // skills.style.opacity = Math.min((skillsRect.top - window.innerHeight) / -skillsRect.height, 1);
+    })
+  }, []);
+
+  
   return (
     <div id="skills-container" className='w-full h-[160vh] pt-headerOffset bg-tertiaryLight transition-all duration-modeSwitchDuration ease-in-out dark:bg-tertiaryDark'>
       <div id="skills-innerContainer" className='relative grid place-items-center w-full h-full clip-parallelogram bg-[url("https://images.unsplash.com/photo-1521185496955-15097b20c5fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=2048&q=60")] bg-secondaryLight bg-center bg-cover bg-no-repeat text-light transition-all duration-modeSwitchDuration ease-in-out after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:bg-dark after:filter after:opacity-50 after:-z-1 dark:bg-secondaryDark'>
-        <div className='grid grid-cols-2 grid-rows-3 sm:grid-cols-3 sm:grid-rows-2 lg:grid-cols-4 lg:grid-rows-2 gap-4 transitioning'>
+        <div id='skills' className='grid grid-cols-2 grid-rows-3 sm:grid-cols-3 sm:grid-rows-2 lg:grid-cols-4 lg:grid-rows-2 gap-4 transitioning opacity-0'>
           <Skill Icon={AiFillHtml5} skill='HTML' color='skill-icon from-[#e34c26] to-[50%] from-[50%] to-[#f06529]' />
           <Skill Icon={BiLogoCss3} skill='CSS' color='skill-icon from-[#264de4] to-[50%] from-[50%] to-[#2965f1]' />
           <Skill Icon={BiLogoJavascript} skill='JAVA SCRIPT' color='skill-icon from-[#E5A42D] to-[50%] from-[50%] to-[#F0C02C]' />
