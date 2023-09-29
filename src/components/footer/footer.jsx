@@ -64,19 +64,19 @@ function Footer() {
               <BiLogoFacebook size={22} />
             </a>
             <a
-              href='https://facebook.com'
+              href='https://www.linkedin.com/in/lucas-andersson-861425214/'
               className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <BiLogoLinkedin size={22} />
             </a>
             <a
-              href='https://facebook.com'
+              href='#contact-container'
               className='p-4 rounded-full shadow-lg hover:text-[#f16623] dark:hover:text-[#f16623] hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <BiSolidContact size={22} />
             </a>
             <a
-              href='https://facebook.com'
+              href='https://github.com/GITZMBE'
               className='p-4 rounded-full shadow-lg hover:text-[#620296] dark:hover:text-[#a304fa] hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <RxGithubLogo size={22} />

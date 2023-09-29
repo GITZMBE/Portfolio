@@ -72,13 +72,13 @@ function ResponsiveNav() {
           </p>
           <div className='flex justify-center gap-4 sm:gap-12 py-4'>
             <a
-              href='https://github.com/GITZMBE?tab=repositories'
+              href='https://github.com/GITZMBE'
               className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <RxGithubLogo size={22} className='' />
             </a>
             <a
-              href='https://www.linkedin.com/feed/'
+              href='https://www.linkedin.com/in/lucas-andersson-861425214/'
               className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
               <BiLogoLinkedin size={22} />
