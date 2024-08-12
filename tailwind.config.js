@@ -10,15 +10,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      height: {
-        headerOffset: "4rem",
-      },
-      margin: {
-        headerOffset: "4rem",
-      },
-      padding: {
-        headerOffset: "4rem",
+      spacing: {
         buttonPadding: "3px",
+        headerOffset: "4rem",
       },
       backgroundColor: {
         // general

@@ -2,20 +2,18 @@ import React from "react";
 import { AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { BiLogoReact, BiLogoLinkedin, BiSolidContact } from "react-icons/bi";
 import { RxGithubLogo } from "react-icons/rx";
+import { useSetRecoilState } from "recoil";
+import { showRelativeNavbarState } from "../recoil";
 
 function ResponsiveNav() {
-  const handleClick = () => {
-    const navContainer = document.getElementById("nav-container");
-    navContainer.classList.contains("hidden")
-      ? navContainer.classList.remove("hidden")
-      : navContainer.classList.add("hidden");
+  const setShowRelativeNavbar = useSetRecoilState(showRelativeNavbarState);
+
+  const handleClose = () => {
+    setShowRelativeNavbar(false);
   };
 
   return (
-    <div
-      id='nav-container'
-      className='hidden fixed top-0 left-0 w-full h-screen bg-overPrimaryLight'
-    >
+    <div className='fixed z-10 top-0 left-0 w-full h-screen bg-overPrimaryLight'>
       <nav className='flex flex-col justify-between gap-4 h-full w-[85%] sm:w-[65%] md:w-[55%] lg:w-[45%] py-8 px-4 bg-primaryLight transitioning dark:bg-primaryDark'>
         <div>
           <div className='flex justify-between items-center'>
@@ -25,46 +23,60 @@ function ResponsiveNav() {
             />
             <a
               href='#home-container'
-              className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight cursor-pointer'
+              className='group p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight cursor-pointer transitioning'
+              onClick={handleClose}
             >
               <AiOutlineClose
-                id='close-btn'
-                onClick={handleClick}
                 size={22}
-                className='cursor-pointer fill-overPrimaryLight hover:fill-dark dark:fill-lightOverPrimaryDark dark:hover:fill-darkOverPrimaryDark transioning'
+                className='cursor-pointer text-overPrimaryLight group-hover:text-dark dark:text-lightOverPrimaryDark group-dark:hover:text-darkOverPrimaryDark transioning'
               />
             </a>
           </div>
           <p className='text-xl dark:text-lightOverPrimaryDark px-2 py-4 border-b dark:border-b-darkOverPrimaryDark tracking-widest uppercase cursor-default'>
             Contact for your own build
           </p>
-          <ul className='flex flex-col gap-8 text-2xl py-4 list-none font-semibold'>
-            <li>
-              <a href='#home-container' target='_self'>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href='#about-container' target='_self'>
-                About
-              </a>
-            </li>
-            <li>
-              <a href='#skills-container' target='_self'>
-                Skills
-              </a>
-            </li>
-            <li>
-              <a href='#portfolio-container' target='_self'>
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a href='#contact-container' target='_self'>
-                Contact
-              </a>
-            </li>
-          </ul>
+          <div className='flex flex-col text-2xl py-4 list-none font-semibold'>
+            <a
+              href='#home-container'
+              target='_self'
+              className='w-full hover:bg-secondaryLight dark:hover:bg-tertiaryDark py-4 px-2'
+              onClick={handleClose}
+            >
+              Home
+            </a>
+            <a
+              href='#about-container'
+              target='_self'
+              className='w-full hover:bg-secondaryLight dark:hover:bg-tertiaryDark py-4 px-2'
+              onClick={handleClose}
+            >
+              About
+            </a>
+            <a
+              href='#skills-container'
+              target='_self'
+              className='w-full hover:bg-secondaryLight dark:hover:bg-tertiaryDark py-4 px-2'
+              onClick={handleClose}
+            >
+              Skills
+            </a>
+            <a
+              href='#portfolio-container'
+              target='_self'
+              className='w-full hover:bg-secondaryLight dark:hover:bg-tertiaryDark py-4 px-2'
+              onClick={handleClose}
+            >
+              Portfolio
+            </a>
+            <a
+              href='#contact-container'
+              target='_self'
+              className='w-full hover:bg-secondaryLight dark:hover:bg-tertiaryDark py-4 px-2'
+              onClick={handleClose}
+            >
+              Contact
+            </a>
+          </div>
         </div>
         <div>
           <p className='text-xl text-[#61DBFB] dark:text-[#08B6CE] cursor-default'>
@@ -75,7 +87,7 @@ function ResponsiveNav() {
               href='https://github.com/GITZMBE'
               className='p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
             >
-              <RxGithubLogo size={22} className='' />
+              <RxGithubLogo size={22} />
             </a>
             <a
               href='https://www.linkedin.com/in/lucas-andersson-861425214/'

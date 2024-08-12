@@ -3,7 +3,7 @@ import { BiLogoLinkedin } from "react-icons/bi";
 import { RxGithubLogo } from "react-icons/rx";
 import { GrFacebookOption } from "react-icons/gr";
 
-function Home() {
+export const HomePage = () => {
   return (
     <>
       <div
@@ -54,4 +54,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-function Portfolio() {
+export const PortfolioPage = () => {
   useEffect(() => {
     const handleScroll = () => {
       const linkContainer = document.getElementById('link-container');
@@ -51,4 +51,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default PortfolioPage;

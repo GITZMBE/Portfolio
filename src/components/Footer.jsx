@@ -1,9 +1,9 @@
 import React from "react";
-import CopyRight from "./CopyRight/copy-right";
 import { BiLogoLinkedin, BiSolidContact, BiLogoFacebook } from "react-icons/bi";
 import { RxGithubLogo } from "react-icons/rx";
+import CopyRight from "./CopyrightBar";
 
-function Footer() {
+export const Footer = () => {
   return (
     <>
       <footer className='grid grid-cols-1 grid-rows-4 gap-4 justify-between md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 transitioning w-full py-12 px-8 lg:px-12 bg-primaryLight transitioning dark:text-darkOverPrimaryDark dark:bg-primaryDark cursor-default'>

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Skill({ Icon, skill, color }) {
+export const Skill = ({ Icon, skill, color }) => {
   return (
     // <div className='w-fit bg-white p-4 text-center text-dark transitioning dark:bg-dark dark:text-lightOverPrimaryDark rounded-lg'>
     //   <Icon size={80} className={color} />

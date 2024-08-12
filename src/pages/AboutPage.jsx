@@ -1,6 +1,6 @@
 import React from "react";
 
-function About() {
+export const AboutPage = () => {
   return (
     <>
       <div
@@ -79,4 +79,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutPage;

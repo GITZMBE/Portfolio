@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { BiLogoCss3, BiLogoReact, BiLogoJavascript, BiLogoAngular, BiLogoTailwindCss, BiLogoGit } from 'react-icons/bi';
 import { RxGithubLogo } from 'react-icons/rx';
-import Skill from './Skill/skill';
+import { Skill } from '../components';
 
-function Skills() {
+export const SkillsPage = () => {
   useEffect(() => {
     window.addEventListener('scroll', (e) => {
       const skills = document.getElementById('skills');
@@ -37,4 +37,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default SkillsPage;
