@@ -22,6 +22,18 @@ export const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const onSubmit = (data: IFormData) => {
+
+    try {
+      setIsLoading(true);
+
+      setTimeout(() => {
+        console.log(data);
+      }, 3000);
+    } catch(error) {
+      console.log(error);
+    } finally {
+      setIsLoading(false);
+    }
     console.log(data);
   };
 
