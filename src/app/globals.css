@@ -1,0 +1,13 @@
+@import '@/styles/scrollbar.css'; 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layout utilities {
+  
+}
+
+* {
+  @apply transition duration-300;
+}

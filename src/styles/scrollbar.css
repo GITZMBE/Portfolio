@@ -1,0 +1,26 @@
+
+::-webkit-scrollbar {
+  @apply hidden bg-light;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-tertiaryLight;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-secondaryLight;
+}
+
+/* scrollbar dark */
+
+.dark::-webkit-scrollbar {
+  @apply hidden bg-secondaryDark;
+}
+
+.dark::-webkit-scrollbar-thumb {
+  @apply bg-darkOverPrimaryDark;
+}
+
+.dark::-webkit-scrollbar-thumb:hover {
+  @apply bg-light;
+}
