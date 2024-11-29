@@ -1,13 +1,13 @@
 import React from "react";
-import { BiLogoLinkedin, BiSolidContact, BiLogoFacebook } from "react-icons/bi";
+import { BiLogoLinkedin } from "react-icons/bi";
 import { RxGithubLogo } from "react-icons/rx";
-import CopyRight from "./CopyrightBar";
+import { GrFacebookOption } from "react-icons/gr";
 
 export const Footer = () => {
   return (
     <>
-      <footer className='grid grid-cols-1 grid-rows-4 gap-4 justify-between md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 transitioning w-full py-12 px-8 lg:px-12 bg-primaryLight transitioning dark:text-darkOverPrimaryDark dark:bg-primaryDark cursor-default'>
-        <div id='company-container' className='w-fit'>
+      <footer className='fixed bottom-0 flex transitioning w-full py-12 px-8 lg:px-12 transitioning cursor-default'>
+        {/* <div id='company-container' className='w-fit'>
           <h2 className='w-12 py-2 font-bold uppercase text-dark border-b-2 border-b-[#61DBFB] dark:border-b-[#08B6CE] dark:text-lightOverPrimaryDark transitioning'>
             Company
           </h2>
@@ -82,9 +82,38 @@ export const Footer = () => {
               <RxGithubLogo size={22} />
             </a>
           </div>
-        </div>
+        </div> */}
+        <nav className='flex gap-4'>
+            <a
+              href='https://facebook.com'
+              className='group p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
+            >
+              <GrFacebookOption
+                size={22}
+                className='text-overPrimaryLight group-hover:text-dark dark:text-lightOverPrimaryDark dark:group-hover:text-darkOverPrimaryDark transioning cursor-pointer'
+              />
+            </a>
+            <a
+              href='https://github.com/GITZMBE?tab=repositories'
+              className='group p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
+            >
+              <RxGithubLogo
+                size={22}
+                className='text-overPrimaryLight group-hover:text-dark dark:text-lightOverPrimaryDark dark:group-hover:text-darkOverPrimaryDark transioning cursor-pointer'
+              />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/lucas-andersson-861425214/'
+              className='group p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer'
+            >
+              <BiLogoLinkedin
+                size={22}
+                className='text-overPrimaryLight group-hover:text-dark dark:text-lightOverPrimaryDark dark:group-hover:text-darkOverPrimaryDark transioning cursor-pointer'
+              />
+            </a>
+          </nav> 
       </footer>
-      <CopyRight />
+      {/* <CopyrightBar /> */}
     </>
   );
 }

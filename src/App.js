@@ -4,7 +4,7 @@ import Layout from "./Layout";
 
 function App() {
   return (
-    <div className={`bg-secondaryLight transition-all dark:bg-secondaryDark dark:duration-modeSwitchDuration ease-in-out`}>
+    <div className={`bg-secondaryLight transition-all dark:bg-secondaryDark overflow-x-auto max-w-screen h-screen scroll-smooth snap-mandatory snap-x`}>
       <Layout>
         <HomePage />
         <AboutPage />

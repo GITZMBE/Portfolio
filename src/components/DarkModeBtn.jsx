@@ -2,7 +2,7 @@ import { React, useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { darkModeState } from '../recoil';
 
-function DarkModeBtn() {
+export const DarkModeBtn = () => {
   const [isDarkMode, setIsDarkMode] = useRecoilState(darkModeState);
 
   useEffect(() => {

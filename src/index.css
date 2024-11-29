@@ -44,7 +44,7 @@
   ::-webkit-scrollbar-thumb,
   ::-webkit-scrollbar-button,
   ::-webkit-scrollbar-track {
-    @apply transitioning;
+    @apply transitioning hidden;
   }
 
   a {

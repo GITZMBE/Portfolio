@@ -2,18 +2,10 @@ import React from "react";
 import { AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { BiLogoReact, BiLogoLinkedin, BiSolidContact } from "react-icons/bi";
 import { RxGithubLogo } from "react-icons/rx";
-import { useSetRecoilState } from "recoil";
-import { showRelativeNavbarState } from "../recoil";
 
-function ResponsiveNav() {
-  const setShowRelativeNavbar = useSetRecoilState(showRelativeNavbarState);
-
-  const handleClose = () => {
-    setShowRelativeNavbar(false);
-  };
-
+export const ResponsiveNav = ({ open, handleClose }) => {
   return (
-    <div className='fixed z-10 top-0 left-0 w-full h-screen bg-overPrimaryLight'>
+    <div className={`fixed z-10 top-0 left-0 ${ open ? 'w-full' : 'w-0' } h-screen bg-overPrimaryLight overflow-x-hidden`}>
       <nav className='flex flex-col justify-between gap-4 h-full w-[85%] sm:w-[65%] md:w-[55%] lg:w-[45%] py-8 px-4 bg-primaryLight transitioning dark:bg-primaryDark'>
         <div>
           <div className='flex justify-between items-center'>

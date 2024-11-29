@@ -1,6 +1,6 @@
 import React from "react";
 
-function CopyRight() {
+export const CopyrightBar = () => {
   return (
     <div>
       <hr className="bg-dark mx-8 lg:mx-12" />
@@ -11,8 +11,7 @@ function CopyRight() {
         @LucasAndersson
       </p>      
     </div>
-
   );
-}
+};
 
-export default CopyRight;
+export default CopyrightBar;

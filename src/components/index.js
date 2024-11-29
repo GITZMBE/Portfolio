@@ -1,7 +1,10 @@
-export * from './CopyrightBar.jsx';
-export * from './Footer.jsx';
-export * from './Header.jsx';
-export * from './ModeBtn.jsx';
-export * from './ResponsiveNavbar.jsx';
-export * from './Skill.jsx';
-export * from './Navbar.jsx';
+export * from './layout/Footer';
+export * from './layout/Header';
+export * from './layout/ResponsiveNavbar';
+export * from './layout/Navbar';
+
+export * from './ui/PageContainer';
+
+export * from './CopyrightBar';
+export * from './DarkModeBtn';
+export * from './ui/skills/Skill';
