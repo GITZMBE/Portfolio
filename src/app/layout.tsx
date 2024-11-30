@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import { Footer, Header, Toaster } from "@/components";
-import { ThemeProvider } from "next-themes";
+import "react-toastify/dist/ReactToastify.css";
+import "./globals.css";
+import { ThemeProvider } from "@/providers";
 
 export const metadata: Metadata = {
   title: "Portfolio | Lucas Andersson",
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={``}
+        className={`bg-primaryLight dark:bg-primaryDark transition duration-300`}
       >
         <ThemeProvider>
           <Toaster />

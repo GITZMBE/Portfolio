@@ -19,7 +19,7 @@ export const HomeSection = () => {
             user-friendly web applications using modern technologies.
           </p>
         </div>
-        <div className="flex justify-center items-center min-w-[40vw] h-full">
+        <div className="hidden md:flex justify-center items-center min-w-[40vw] h-full">
           <Image src={'/blob.png'} width={500} height={500} className="w-full object-fit object-center overflow-hidden" priority alt="" />
         </div>
       </div>

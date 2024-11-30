@@ -9,7 +9,7 @@ export * from './layout/Header';
 export * from './layout/ResponsiveNavbar';
 export * from './layout/Navbar';
 
-export * from './ui/DarkModeBtn';
+export * from './ui/ThemeSwitcher';
 export * from './ui/PageContainer';
 export * from './ui/Text';
 export * from './ui/Toaster';

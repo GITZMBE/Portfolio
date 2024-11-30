@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { AiOutlineMenu, AiFillFolderOpen } from "react-icons/ai";
-import { Navbar, ResponsiveNav, DarkModeBtn } from "@/components";
+import { Navbar, ResponsiveNav, ThemeSwitcher } from "@/components";
 import { useScroll } from "@/hooks";
 
 export const Header = () => {
@@ -22,7 +22,7 @@ export const Header = () => {
       </h1>
       <Navbar hasScrolled={hasScrolled} />
       <div className='flex gap-8'>
-        <DarkModeBtn />
+        <ThemeSwitcher />
         <AiOutlineMenu
           onClick={() => setNavOpen(prev => !prev)}
           size={22}

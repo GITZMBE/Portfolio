@@ -3,7 +3,7 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
-export const DarkModeBtn = () => {
+export const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
 
@@ -22,4 +22,4 @@ export const DarkModeBtn = () => {
   );
 }
 
-export default DarkModeBtn;
+export default ThemeSwitcher;
