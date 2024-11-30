@@ -9,14 +9,14 @@ interface IProps extends HTMLAttributes<HTMLElement> {
 
 export const Text = ({ as: Element, children, ...props }: IProps) => {
   const styles = {
-    h1: 'text-4xl sm:text-5xl md:text-6xl font-semibold text-accentDark',
-    h2: 'text-4xl md:text-5xl font-semibold text-accentDark',
-    h3: 'text-2xl sm:text-3xl font-medium text-accentDark',
-    h4: 'text-xl font-medium text-accentDark',
-    h5: 'text-lg text-accentDark',
-    h6: 'text-lg text-accentDark',
-    p: 'text-base sm:text-xl text-accent',
-    span: 'text-xl text-accentSecondary font-medium text-nowrap',
+    h1: 'text-4xl sm:text-5xl md:text-6xl font-semibold text-accentDark dark:text-darkAccentDark',
+    h2: 'text-4xl md:text-5xl font-semibold text-accentDark dark:text-darkAccentDark',
+    h3: 'text-2xl sm:text-3xl font-medium text-accentDark dark:text-darkAccentDark',
+    h4: 'text-xl font-medium text-accentDark dark:text-darkAccentDark',
+    h5: 'text-lg text-accentDark dark:text-darkAccentDark',
+    h6: 'text-lg text-accentDark dark:text-darkAccentDark',
+    p: 'text-base sm:text-xl text-accent dark:text-darkAccent',
+    span: 'text-xl text-accent dark:text-darkAccent font-medium text-nowrap',
   };
 
   return (

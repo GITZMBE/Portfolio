@@ -1,9 +1,11 @@
-import { PageContainer } from "@/components";
+import { PageContainer, Text } from "@/components";
 import { IAsset } from "@/models";
 import Image from "next/image";
-import React from "react";
+import React, { ComponentPropsWithoutRef } from "react";
 
-export const PortfolioSection = () => {
+type IProps = ComponentPropsWithoutRef<"div">;
+
+export const ProjectsSection = ({ ...props }: IProps) => {
   const data: { id: string; title: string; image: IAsset; link: string }[] = [
     {
       id: '1',
@@ -55,22 +57,24 @@ export const PortfolioSection = () => {
     },
   ];
   
-
   return (
     <PageContainer
-      id='portfolio-container'
-      className='flex !justify-center items-center'
+      { ...props }
+      id='projects-container'
+      className={`flex !justify-center items-center snap-start ${ props.className }`}
     >
-      <div id="link-container" className="flex justify-center items-center flex-wrap max-w-[950px] transitioning">
+      <div id="link-container" className="flex justify-center items-center flex-wrap max-w-[950px]">
         {data.map(({ id, title, image, link }) => (
-          <a key={id} href={link} className="group grid place-items-center relative w-64 h-56 text-light text-2xl before:absolute before:left-0 before:top-0 before:right-0 before:bottom-0 before:bg-dark before:z-1 before:opacity-50 overflow-hidden">
-            <Image src={image.url} width={500} height={500} alt="" className="absolute w-96 h-56 group-hover:scale-110 transitioning" />
-            <p className="absolute z-1 text-light group-hover:text-3xl transitioning uppercase opacity-0 group-hover:opacity-100">{ title }</p>
-          </a>          
+          <div key={id} style={{ backgroundImage: `url(${image.url})`, backgroundSize: "cover", backgroundPosition: "center" }} className="w-36 md:w-52 aspect-square rounded-md overflow-hidden">
+            {/* <Image src={image.url} width={500} height={500} alt="" className="absolute w-96 h-56 group-hover:scale-110" /> */}
+            <a href={link} className="flex justify-center items-center w-full h-full hover:backdrop-brightness-50">
+              <Text as="h2" className="uppercase !text-2xl sm:!text-2xl md:!text-2xl !text-accent dark:!text-darkAccent !cursor-pointer">{ title }</Text>
+            </a>
+          </div>
         ))}
       </div>
     </PageContainer>
   );
 }
 
-export default PortfolioSection;
+export default ProjectsSection;

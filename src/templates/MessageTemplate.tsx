@@ -35,7 +35,7 @@ export const MessageTemplate = ({ data }: IProps) => {
           },
         }}
       >
-        <Body style={{ fontFamily: "Inter, Arial, sans-serif" }} className="m-0 p-0 w-full text-accent font-Inter">
+        <Body style={{ fontFamily: "Inter, Arial, sans-serif" }} className="m-0 p-0 w-full text-accentLight font-Inter">
           <Section className='my-4 px-4'>
             <Row>
               <Img

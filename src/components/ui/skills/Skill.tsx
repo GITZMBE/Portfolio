@@ -1,5 +1,6 @@
 import React from "react";
 import { IconType } from "react-icons/lib";
+import { Text } from "@/components";
 
 interface IProps { 
   icon: IconType;
@@ -9,17 +10,9 @@ interface IProps {
 
 export const Skill = ({ icon: Icon, skill, gradient }: IProps) => {
   return (
-    // <div className='w-fit bg-white p-4 text-center text-dark transitioning dark:bg-dark dark:text-lightOverPrimaryDark rounded-lg'>
-    //   <Icon size={80} className={color} />
-    //   <p className="">{skill}</p>
-    // </div>
-
-    <div className='relative w-fit min-w-[125px] sm:min-w-[150px] sm:min-h-[150px] lg:min-w-[200px] lg:min-h-[200px] p-4 text-center text-dark transitioning rounded-xl overflow-hidden hover:scale-105 cursor-pointer'>
-      <div className="absolute top-0 left-0 w-full h-full bg-slate-100 dark:bg-slate-950 z-0 filter blur-lg backdrop-blur-lg opacity-30 dark:opacity-50 transitioning"></div>
-      <div className='flex flex-col h-full items-center justify-between gap-2 z-10 relative rounded-lg'>
-        <Icon size={80} className={`w-36 aspect-square !text-light dark:!text-dark bg-gradient-to-r rounded-md ${gradient}`} />
-        <p className="lg:text-xl font-semibold text-dark dark:text-light transitioning">{skill}</p>
-      </div>
+    <div className='w-full max-w-[120px] sm:max-w-[150px] rounded-md overflow-hidden dark:backdrop-brightness-75 shadow-md shadow-accentDark dark:shadow-dark '>
+      <Icon size={80} className={`w-full aspect-square !text-accent dark:!text-darkAccent bg-gradient-to-r ${gradient}`} />
+      <Text as='h2' className="!text-xl !leading-8 text-center">{skill}</Text>
     </div>
   )
 }

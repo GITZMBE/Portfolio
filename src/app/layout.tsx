@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Footer, Header, Toaster } from "@/components";
-import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
 import { ThemeProvider } from "@/providers";
 
@@ -23,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-primaryLight dark:bg-primaryDark transition duration-300`}
+        className={`max-w-screen overflow-x-hidden bg-primaryLight dark:bg-primaryDark`}
       >
         <ThemeProvider>
           <Toaster />

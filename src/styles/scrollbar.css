@@ -4,23 +4,23 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-tertiaryLight;
+  @apply bg-tertiary;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-secondaryLight;
+  @apply bg-secondary;
 }
 
 /* scrollbar dark */
 
 .dark::-webkit-scrollbar {
-  @apply hidden bg-secondaryDark;
+  @apply hidden bg-darkSecondary;
 }
 
 .dark::-webkit-scrollbar-thumb {
-  @apply bg-darkOverPrimaryDark;
+  @apply bg-darkAccentDark;
 }
 
 .dark::-webkit-scrollbar-thumb:hover {
-  @apply bg-light;
+  @apply bg-darkPrimary;
 }

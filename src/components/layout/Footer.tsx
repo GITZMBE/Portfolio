@@ -67,12 +67,12 @@ export const Footer = () => {
           <a
             key={id}
             href={link}
-            className={`group p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer ${containerProps.className}`}
+            className={`group p-4 rounded-full shadow-lg hover:shadow-dark dark:hover:bg-darkTertiary cursor-pointer ${containerProps.className}`}
           >
             <Icon 
               {...iconProps} 
               size={22} 
-              className='text-overPrimaryLight group-hover:text-dark dark:text-lightOverPrimaryDark dark:group-hover:text-darkOverPrimaryDark cursor-pointer' 
+              className='text-accentDark group-hover:text-dark dark:text-darkAccentDark dark:group-hover:text-darkAccent cursor-pointer' 
             />
           </a>
         ))}

@@ -1,7 +1,7 @@
 export * from './layout/sections/HomeSection';
-export * from './layout/sections/AboutSection';
+export * from './layout/sections/ExperienceSection';
 export * from './layout/sections/SkillsSection';
-export * from './layout/sections/PortfolioSection';
+export * from './layout/sections/ProjectsSection';
 export * from './layout/sections/ContactSection';
 
 export * from './layout/Footer';

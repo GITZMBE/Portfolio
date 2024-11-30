@@ -4,10 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@layout utilities {
+@layer utilities {
   
 }
 
 * {
-  @apply transition duration-300;
+  @apply scroll-smooth transition duration-300;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, i, strong, label, img {
+  @apply cursor-default;
 }

@@ -1,14 +1,14 @@
-import { AboutSection, ContactSection, HomeSection, PortfolioSection, SkillsSection } from "@/components";
+import { ContactSection, ExperienceSection, HomeSection, ProjectsSection, SkillsSection } from "@/components";
 
 export default function Home() {
   return (
-    <div className={`bg-secondaryLight transition-all dark:bg-secondaryDark overflow-x-auto max-w-screen h-screen scroll-smooth snap-mandatory snap-x`}>
-      <div className={`flex w-fit h-full`}>
-        <HomeSection />
-        <AboutSection />
-        <SkillsSection />
-        <PortfolioSection />
-        <ContactSection />
+    <div className="max-h-screen overflow-y-hidden">
+      <div className={`flex w-fit max-w-screen h-screen transition-all overflow-x-auto scroll-smooth snap-x snap-mandatory`}>
+        <HomeSection className="snap-start" />
+        <ExperienceSection className="snap-start" />
+        <SkillsSection className="snap-start" />
+        <ProjectsSection className="snap-start" />
+        <ContactSection className="snap-start" />
       </div>
     </div>
   );

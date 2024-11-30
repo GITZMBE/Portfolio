@@ -6,12 +6,12 @@ interface IProps extends ComponentPropsWithoutRef<'div'> {
 
 export const PageContainer = ({ children, ...props }: IProps) => {
   return (
-    <div
+    <section
       { ...props }
-      className={`flex justify-between items-center w-screen h-full py-[150px] px-4 sm:px-8 md:px-12 transition-all duration-300 ease-in-out ${ props.className }`}
+      className={`flex justify-between items-center w-screen h-screen max-h-screen overflow-y-hidden py-[150px] px-4 sm:px-8 md:px-12 ${ props.className }`}
     >
       { children }
-    </div>
+    </section>
   )
 };
 
