@@ -6,11 +6,10 @@ interface IProps {
   data: IFormData;
 };
 
-export const QuestionTemplate = ({ data }: IProps) => {
+export const MessageTemplate = ({ data }: IProps) => {
   return (
     <Html>
       <Head>
-        {/* Add Google Fonts using Font component */}
         <Font
           fontFamily="Anonymous Pro"
           fallbackFontFamily="Arial"
@@ -51,7 +50,7 @@ export const QuestionTemplate = ({ data }: IProps) => {
             <Row>
               <Column>
                 <Heading className='m-0 mb-2 text-2xl text-accentDark'>Subject</Heading>
-                <Text className='m-0 text-nowrap'>{data.subject}</Text>
+                <Text className='m-0 text-nowrap'>{data.subject || 'Meddelande'}</Text>
               </Column>
             </Row>
           </Section>
@@ -86,4 +85,4 @@ export const QuestionTemplate = ({ data }: IProps) => {
   )
 }
 
-export default QuestionTemplate;
+export default MessageTemplate;

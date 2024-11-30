@@ -3,13 +3,9 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { Text } from '@/components';
-
-interface IFormData {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-};
+import { IFormData } from '@/models';
+import { sendContactForm } from '@/actions';
+import { toast } from 'react-toastify';
 
 export const ContactForm = () => {
   const defaultValues: IFormData = {
@@ -18,23 +14,24 @@ export const ContactForm = () => {
     subject: '',
     message: '',
   }
-  const { register, handleSubmit, formState: { errors } } = useForm<IFormData>({ defaultValues });
+  const { register, handleSubmit, reset, formState: { errors } } = useForm<IFormData>({ defaultValues });
   const [isLoading, setIsLoading] = useState(false);
 
-  const onSubmit = (data: IFormData) => {
-
+  const onSubmit = async (data: IFormData) => {
     try {
       setIsLoading(true);
 
-      setTimeout(() => {
-        console.log(data);
-      }, 3000);
+      const res = await sendContactForm(data);
+
+      if (!res.ok) return;
+
+      toast.success('Thank you for your message!');
     } catch(error) {
       console.log(error);
     } finally {
+      reset(defaultValues);
       setIsLoading(false);
     }
-    console.log(data);
   };
 
   return (

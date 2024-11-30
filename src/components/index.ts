@@ -12,6 +12,8 @@ export * from './layout/Navbar';
 export * from './ui/DarkModeBtn';
 export * from './ui/PageContainer';
 export * from './ui/Text';
+export * from './ui/Toaster';
+
 export * from './ui/form/ContactForm';
 
 export * from './ui/skills/Skill';
