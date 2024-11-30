@@ -33,7 +33,7 @@ export const ContactForm = () => {
 
       const res = await sendContactForm(data);
 
-      if (!res.ok) return;
+      if (!res) return;
 
       toast.success('Thank you for your message!');
     } catch(error) {
