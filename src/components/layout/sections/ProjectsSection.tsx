@@ -1,6 +1,5 @@
 import { PageContainer, Text } from "@/components";
 import { IAsset } from "@/models";
-import Image from "next/image";
 import React, { ComponentPropsWithoutRef } from "react";
 
 type IProps = ComponentPropsWithoutRef<"div">;

@@ -1,7 +1,6 @@
 import React from "react";
 import { AiFillFolderOpen } from "react-icons/ai";
 import { Navbar } from "@/components";
-import { useScroll } from "@/hooks";
 
 export const Header = () => {
   return (
