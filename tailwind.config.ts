@@ -1,11 +1,8 @@
 import type { Config } from "tailwindcss";
 
-export default {
-  darkMode: "class",
+const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -14,20 +11,19 @@ export default {
         dark: "#000000",
         light: "#FFFFFF",
         // light
-        primaryLight: "#FDFDFD",
-        secondaryLight: "#DFDFDF",
-        tertiaryLight: "#CDCDCD",
-        overPrimaryLight: "#00000090",
-        overSecondaryLight: "#00000050",
-        overDark: "#DFDFDF",
-        quaternaryLight: "#AAAAAA",
+        primary: "#FDFDFD",
+        secondary: "#DBDBDB",
+        tertiary: "#B9B9B9",
+        accent: "#EDEDED",
+        accentLight: "#BDBDBD",
+        accentDark: "#6A6A6A",
         // dark
-        primaryDark: "#123123",
-        secondaryDark: "#152025",
-        tertiaryDark: "#234234",
-        quaternaryDark: "#253545",
-        darkOverPrimaryDark: "#FFFFFF90",
-        lightOverPrimaryDark: "#FFFFFF",
+        darkPrimary: "#121212",
+        darkSecondary: "#232323",
+        darkTertiary: "#343434",
+        darkAccent: "#FFFFFF",
+        darkAccentDark: "#FFFFFF50",
+        darkAccentLight: "#FFFFFF90",
 
         error: "#FF0000",
       },
@@ -53,14 +49,34 @@ export default {
             transform: 'translateY(0)',
             opacity: '1',
           }
-        }
+        },
+        openResponsiveNav: {
+          "from": {
+            width: '0',
+          },
+          "to": {
+            width: '100vw',
+          }
+        },
+        closeResponsiveNav: {
+          "from": {
+            width: '100vw',
+          },
+          "to": {
+            width: '0',
+          }
+        },
       },
       animation: {
         toDark: 'toDark 300 ease-in-out forwards',
         toLight: 'toLight 300 ease-in-out forwards',
         show: 'show 700ms ease-in-out forwards',
+        openResponsiveNav: 'openResponsiveNav 300ms ease-in-out forwards',
+        closeResponsiveNav: 'closeResponsiveNav 300ms ease-in-out forwards',
       },
     },
   },
-  plugins: [],
-} satisfies Config;
+  darkMode: "class",
+};
+
+export default config;
