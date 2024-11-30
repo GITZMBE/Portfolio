@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Footer, Header } from "@/components";
+import { Footer, Header, Toaster } from "@/components";
 import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
@@ -25,6 +25,7 @@ export default function RootLayout({
         className={``}
       >
         <ThemeProvider>
+          <Toaster />
           <Header />
           {children}
           <Footer />
