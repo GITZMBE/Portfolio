@@ -1,6 +1,8 @@
 
 export interface IAsset {
-  url: string
+  url: string;
+  width: number;
+  height: number;
 };
 
 export default IAsset;
