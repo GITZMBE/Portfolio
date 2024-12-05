@@ -1,10 +1,10 @@
-import React, { ComponentPropsWithoutRef } from 'react';
+import React, { ComponentPropsWithoutRef, ComponentPropsWithRef } from 'react';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { BiLogoCss3, BiLogoReact, BiLogoJavascript, BiLogoAngular, BiLogoTailwindCss, BiLogoGit } from 'react-icons/bi';
 import { RxGithubLogo } from 'react-icons/rx';
 import { Skill, PageContainer } from '@/components';
 
-type IProps = ComponentPropsWithoutRef<"div">;
+type IProps = ComponentPropsWithRef<"div">;
 
 export const SkillsSection = ({ ...props }: IProps) => {
   const skills = [
@@ -53,7 +53,6 @@ export const SkillsSection = ({ ...props }: IProps) => {
   return (
     <PageContainer
       { ...props }
-      id="skills-container"
       className={`snap-start ${ props.className }`}
     >
       <div id="skills-innerContainer" className='w-full flex justify-center'>

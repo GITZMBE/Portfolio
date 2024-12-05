@@ -5,6 +5,8 @@ export interface IProject {
   slug: string;
   description: string;
   githubLink: string | null;
+  banner: IAsset | null;
+  logo: IAsset | null;
   images: IAsset[];
   skills: ISkill[];
   hostingLink: string | null;

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Footer, Header, Toaster } from "@/components";
 import "./globals.css";
-import { ThemeProvider } from "@/providers";
+import { ThemeProvider, ScrollingProvider } from "@/providers";
 
 export const metadata: Metadata = {
   title: "Portfolio | Lucas Andersson",
@@ -25,10 +25,12 @@ export default function RootLayout({
         className={`max-w-screen overflow-x-hidden bg-primaryLight dark:bg-primaryDark`}
       >
         <ThemeProvider>
-          <Toaster />
-          <Header />
-          {children}
-          <Footer />
+          <ScrollingProvider>
+            <Toaster />
+            <Header />
+            {children}
+            <Footer />
+          </ScrollingProvider>
         </ThemeProvider>
       </body>
     </html>

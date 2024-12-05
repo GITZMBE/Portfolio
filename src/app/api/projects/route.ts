@@ -11,7 +11,17 @@ export const GET = async () => {
         slug
         description
         githubLink
-        images {
+        banner {
+          url
+          width
+          height
+        }
+        logo {
+          url
+          width
+          height
+        }
+        images(orderBy: createdAt_ASC) {
           url
           width
           height

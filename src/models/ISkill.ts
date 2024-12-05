@@ -1,9 +1,9 @@
+import { IAsset } from "@/models";
 
 export interface ISkill {
   title: string;
   slug: string;
-  description: string;
-  icon: string | null;
+  icon: IAsset | null;
   iconUrl: string | null;
 };
 

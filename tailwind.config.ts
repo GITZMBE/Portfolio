@@ -66,6 +66,26 @@ const config: Config = {
             width: '0',
           }
         },
+        fadeInFromBottom: {
+          "from": {
+            opacity: '0%',
+            transform: 'translateY(100px)',
+          },
+          "to": {
+            opacity: '50%',
+            transform: 'translateY(0%)',
+          }
+        },
+        fadeInFromTop: {
+          "from": {
+            opacity: '0%',
+            transform: 'translateY(-100px)',
+          },
+          "to": {
+            opacity: '50%',
+            transform: 'translateY(0%)',
+          }
+        }
       },
       animation: {
         toDark: 'toDark 300 ease-in-out forwards',
@@ -73,6 +93,8 @@ const config: Config = {
         show: 'show 700ms ease-in-out forwards',
         openResponsiveNav: 'openResponsiveNav 300ms ease-in-out forwards',
         closeResponsiveNav: 'closeResponsiveNav 300ms ease-in-out forwards',
+        fadeInFromBottom: 'fadeInFromBottom 1000ms ease-in-out forwards',
+        fadeInFromTop: 'fadeInFromTop 1000ms ease-in-out forwards',
       },
     },
   },

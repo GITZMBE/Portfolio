@@ -4,25 +4,28 @@ import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import ResponsiveNav from "./ResponsiveNavbar";
 import ThemeSwitcher from "../ui/ThemeSwitcher";
+import { useScrollingContext } from "@/providers";
 
 export const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const { refs } = useScrollingContext();
+  const { startRef, experienceRef, skillsRef, projectsRef, contactRef } = refs;
 
   const links = [
-    { label: "Home", url: "#home-container" },
-    { label: "Experience", url: "#experience-container" },
-    { label: "Skills", url: "#skills-container" },
-    { label: "Projects", url: "#projects-container" },
-    { label: "Contact", url: "#contact-container" },
+    { label: "Home", ref: startRef },
+    { label: "Experience", ref: experienceRef },
+    { label: "Skills", ref: skillsRef },
+    { label: "Projects", ref: projectsRef },
+    { label: "Contact", ref: contactRef },
   ];
 
   return (
     <nav className={`flex gap-4`}>
       <div className="hidden md:flex gap-4">
-        {links.map(({ label, url }, i) => (
-          <a key={i} href={url} className={`text-dark hover:!text-accentDark dark:!text-light dark:hover:!text-accentDark`} target='_self'>
+        {links.map(({ label, ref }, i) => (
+          <button key={i} className={`text-dark hover:!text-accentDark dark:!text-light dark:hover:!text-accentDark`} onClick={() => ref.current?.scrollIntoView({ behavior: "smooth" })}>
             { label }
-          </a>
+          </button>
         ))}
       </div>
       <div className='flex gap-8'>

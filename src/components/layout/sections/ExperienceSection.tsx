@@ -1,8 +1,8 @@
 import { PageContainer, Text } from "@/components";
 import Image from "next/image";
-import React, { ComponentPropsWithoutRef } from "react";
+import React, { ComponentPropsWithRef } from "react";
 
-type IProps = ComponentPropsWithoutRef<"div">;
+type IProps = ComponentPropsWithRef<"div">;
 
 export const ExperienceSection = ({ ...props }: IProps) => {
   const data = [
@@ -27,7 +27,6 @@ export const ExperienceSection = ({ ...props }: IProps) => {
     <>
       <PageContainer
         { ...props }
-        id='experience-container'
         className={`snap-start ${ props.className }`}
       >
         <div

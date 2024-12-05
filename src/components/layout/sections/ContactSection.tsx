@@ -1,13 +1,12 @@
 import { ContactForm, PageContainer } from "@/components";
-import React, { ComponentPropsWithoutRef } from "react";
+import React, { ComponentPropsWithRef } from "react";
 
-type IProps = ComponentPropsWithoutRef<"div">;
+type IProps = ComponentPropsWithRef<"div">;
 
 export const ContactSection = ({ ...props }: IProps) => {
   return (
     <PageContainer
       { ...props }
-      id='contact-container'
       className={`snap-start ${ props.className }`}
     >
       <ContactForm />
