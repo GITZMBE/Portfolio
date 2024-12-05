@@ -12,7 +12,7 @@ interface IProps {
 };
 
 export const ProjectModal = ({ isOpen, handleClose, project }: IProps) => {
-  const { title, slug, description, banner, images, skills, githubLink, hostingLink } = project || { title: '', slug: '', description: '', banner: null, images: [], skills: [], githubLink: null, hostingLink: null };
+  const { title, slug, description, banner, logo, images, skills, githubLink, hostingLink } = project || { title: '', slug: '', description: '', banner: null, logo: null, images: [], skills: [], githubLink: null, hostingLink: null };
 
   return (
     // <div className={`fixed top-0 left-0 w-full h-full ${ isOpen ? 'flex' : 'hidden'} justify-center items-center backdrop-brightness-50 z-[100] py-12 md:py-24 px-4 sm:px-8 md:px-12`} onClick={handleClose}>
