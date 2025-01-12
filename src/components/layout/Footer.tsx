@@ -21,19 +21,6 @@ export const Footer = () => {
   const socialLinks: ISocialLink[] = [
     {
       id: '1',
-      platform: 'Facebook',
-      icon: GrFacebookOption,
-      link: 'https://facebook.com',
-      iconProps: {
-        size: 22,
-        className: 'text-overPrimaryLight group-hover:text-dark dark:text-lightOverPrimaryDark dark:group-hover:text-darkOverPrimaryDark transioning cursor-pointer',
-      },
-      containerProps: {
-        className: 'group p-4 rounded-full shadow-lg hover:shadow-overPrimaryLight dark:hover:bg-tertiaryDark cursor-pointer',
-      },
-    },
-    {
-      id: '2',
       platform: 'GitHub',
       icon: RxGithubLogo,
       link: 'https://github.com/GITZMBE?tab=repositories',
@@ -46,7 +33,7 @@ export const Footer = () => {
       },
     },
     {
-      id: '3',
+      id: '2',
       platform: 'LinkedIn',
       icon: BiLogoLinkedin,
       link: 'https://www.linkedin.com/in/lucas-andersson-861425214/',
