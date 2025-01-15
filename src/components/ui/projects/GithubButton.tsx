@@ -14,7 +14,7 @@ export const GithubButton = ({ ...props }: IProps) => {
 
   return (
     <Link {...props} href={props.href || ''} className='p-2 rounded-full bg-secondary dark:bg-darkSecondary hover:bg-primary dark:hover:bg-darkPrimary shadow-md hover:shadow-dark'>
-      <Image src={isDarkMode ? 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg' : 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg'} alt={''} width={24} height={24} className='w-6 h-6 cursor-pointer' />
+      <Image src={isDarkMode ? 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg' : 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg'} alt={''} width={24} height={24} className='min-w-6 min-h-6 cursor-pointer' />
     </Link>
   )
 }
