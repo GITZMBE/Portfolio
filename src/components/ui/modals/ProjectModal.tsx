@@ -2,7 +2,7 @@
 
 import { IProject } from '@/models';
 import React from 'react';
-import { Modal, ImageScroller, Text, SkillBadge, GithubButton, VercelButton } from '@/components';
+import { Modal, ImageScroller, Text, GithubButton, VercelButton, SkillBadge } from '@/components';
 import Image from 'next/image';
 
 interface IProps {
@@ -42,6 +42,7 @@ export const ProjectModal = ({ isOpen, handleClose, project }: IProps) => {
                 <VercelButton href={project?.hostingLink} />
               )}
             </div>
+            {banner && <Image src={banner?.url} alt={title} width={banner?.width} height={banner?.height} className='w-full max-h-[350px] object-cover object-center' />}
             <div className="relative h-[200px] max-h-[200px] overflow-hidden">
               <Text as='p'>{description}</Text>
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-primary dark:to-darkPrimary p-2 rounded-md"></div>

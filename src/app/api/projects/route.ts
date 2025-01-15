@@ -6,7 +6,8 @@ import { NextResponse } from "next/server";
 export const GET = async () => {
   const query = gql`
     query {
-      projects {
+      projects (first: 20) {
+        id
         title
         slug
         description
@@ -26,7 +27,8 @@ export const GET = async () => {
           width
           height
         }
-        skills {
+        skills(first: 30) {
+          id
           title
           slug
           icon {

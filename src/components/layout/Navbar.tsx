@@ -8,23 +8,14 @@ import { useScrollingContext } from "@/providers";
 
 export const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const { refs } = useScrollingContext();
-  const { startRef, experienceRef, skillsRef, projectsRef, contactRef } = refs;
-
-  const links = [
-    { label: "Home", ref: startRef },
-    { label: "Experience", ref: experienceRef },
-    { label: "Skills", ref: skillsRef },
-    { label: "Projects", ref: projectsRef },
-    { label: "Contact", ref: contactRef },
-  ];
+  const { refs, links, currentPage, handleChangePage } = useScrollingContext();
 
   return (
     <nav className={`flex gap-4`}>
       <div className="hidden md:flex gap-4">
-        {links.map(({ label, ref }, i) => (
-          <button key={i} className={`text-dark hover:!text-accentDark dark:!text-light dark:hover:!text-accentDark`} onClick={() => ref.current?.scrollIntoView({ behavior: "smooth" })}>
-            { label }
+        {links.map((link, i) => (
+          <button key={i} className={`${currentPage.label === link.label ? '!text-accentDark dark:!text-accentDark' : 'text-dark dark:!text-light'} hover:!text-accentDark dark:hover:!text-accentDark focus:outline-none`} onClick={() => handleChangePage(link)}>
+            { link.label }
           </button>
         ))}
       </div>
@@ -36,7 +27,7 @@ export const Navbar = () => {
           className='text-accentDark hover:text-accent dark:text-darkAccentDark dark:hover:text-darkAccent cursor-pointer block md:hidden'
         />
       </div>
-      <ResponsiveNav open={navOpen} handleClose={() => setNavOpen(false)} links={links} />
+      <ResponsiveNav open={navOpen} handleClose={() => setNavOpen(false)} />
     </nav>
   );
 };

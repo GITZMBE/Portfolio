@@ -1,6 +1,11 @@
 'use client';
 
-import React, { createContext, ReactNode, RefObject, useContext, useRef } from 'react';
+import React, { createContext, ReactNode, RefObject, useContext, useRef, useState } from 'react';
+
+interface ILink {
+  label: string;
+  ref: React.RefObject<HTMLDivElement>;
+};
 
 const ScrollingContext = createContext<{
   refs: {
@@ -10,6 +15,9 @@ const ScrollingContext = createContext<{
     projectsRef: RefObject<HTMLDivElement>;
     contactRef: RefObject<HTMLDivElement>;
   };
+  links: ILink[];
+  currentPage: ILink;
+  handleChangePage: (link: ILink) => void;
 } | null>(null);
 
 export const useScrollingContext = () => {
@@ -27,7 +35,22 @@ export const ScrollingProvider = ({ children }: { children: ReactNode }) => {
   const projectsRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
 
+  const links: ILink[] = [
+    { label: "Home", ref: startRef },
+    { label: "Experience", ref: experienceRef },
+    { label: "Skills", ref: skillsRef },
+    { label: "Projects", ref: projectsRef },
+    { label: "Contact", ref: contactRef },
+  ];
+
+  const [currentPage, setCurrentPage] = useState<ILink>(links[0]);
+
   const refs = { startRef, experienceRef, skillsRef, projectsRef, contactRef };
 
-  return <ScrollingContext.Provider value={{ refs }}>{children}</ScrollingContext.Provider>;
+  const handleChangePage = (link: ILink) => {
+    link.ref.current?.scrollIntoView({ behavior: "smooth" });
+    setCurrentPage(link);
+  };
+
+  return <ScrollingContext.Provider value={{ refs, links, currentPage, handleChangePage }}>{children}</ScrollingContext.Provider>;
 };

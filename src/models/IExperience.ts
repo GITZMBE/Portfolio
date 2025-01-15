@@ -1,6 +1,7 @@
 import ISkill from "./ISkill";
 
 export interface IExperience {
+  id: string;
   title: string;
   company: string;
   location: string;

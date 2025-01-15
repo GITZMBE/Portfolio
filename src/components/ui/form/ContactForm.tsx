@@ -45,7 +45,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <form action="" method="post" onSubmit={handleSubmit(onSubmit)} className='w-full max-w-[500px] flex flex-col gap-4'>
+    <form action="" method="post" onSubmit={handleSubmit(onSubmit)} className='w-full max-w-[500px] flex flex-col gap-4 z-10'>
       <Text as='h2'>Contact Form</Text>
       <div className="flex flex-col gap-2">
         <label className='text-accentDark dark:text-darkAccent'>Name</label>

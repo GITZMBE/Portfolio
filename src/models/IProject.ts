@@ -1,6 +1,7 @@
 import { IAsset, ISkill } from "@/models";
 
 export interface IProject {
+  id: string;
   title: string;
   slug: string;
   description: string;

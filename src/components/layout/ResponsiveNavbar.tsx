@@ -1,3 +1,6 @@
+'use client';
+
+import { useScrollingContext } from "@/providers";
 import React from "react";
 import { AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
@@ -6,12 +9,13 @@ import { RxGithubLogo } from "react-icons/rx";
 interface IProps {
   open: boolean;
   handleClose: () => void;
-  links: { label: string; ref: React.RefObject<HTMLDivElement> }[];
 }
 
-export const ResponsiveNav = ({ open, handleClose, links }: IProps) => {
+export const ResponsiveNav = ({ open, handleClose }: IProps) => {
+  const { refs, links, currentPage, handleChangePage } = useScrollingContext();
+
   return (
-    <nav className={`fixed z-50 top-0 left-0 flex md:hidden flex-col h-full justify-between py-8 bg-primary dark:bg-darkPrimary w-0 ${ open ? 'animate-openResponsiveNav px-4' : 'animate-closeResponsiveNav' } h-screen bg-overPrimaryLight overflow-x-hidden`}>
+    <nav className={`fixed top-0 left-0 flex md:hidden flex-col h-full justify-between py-8 bg-primary dark:bg-darkPrimary w-0 z-50 ${ open ? 'animate-openResponsiveNav px-4' : 'animate-closeResponsiveNav' } h-screen bg-overPrimaryLight overflow-x-hidden`}>
       <div className='flex justify-end items-center pb-4'>
         <button
           className='group p-4 rounded-full shadow-md hover:shadow-dark dark:hover:shadow-light cursor-pointer'
@@ -25,13 +29,13 @@ export const ResponsiveNav = ({ open, handleClose, links }: IProps) => {
       </div>
       <hr className="border-b dark:border-b-darkOverPrimaryDark" />
       <div className='flex flex-col flex-grow text-2xl py-4 list-none font-semibold'>
-        {links.map(({ label, ref }, i) => (
+        {links.map((link, i) => (
           <button
             key={i}
-            className='w-full text-start text-xl text-accentLight hover:text-accentDark dark:text-accentDark hover:dark:text-darkAccentDark hover:bg-secondary dark:hover:bg-darkTertiary p-2'
-            onClick={() => {ref.current?.scrollIntoView({ behavior: "smooth" }); handleClose();}}
+            className={`w-full text-start text-xl text-accentLight hover:text-accentDark dark:text-accentDark hover:dark:text-darkAccentDark ${currentPage.label === link.label ? '!text-accentDark dark:!text-accentDark' : 'text-dark dark:!text-light'} hover:bg-secondary dark:hover:bg-darkTertiary p-2`}
+            onClick={() => {handleChangePage(link); handleClose();}}
           >
-            { label }
+            { link.label }
           </button>
         ))}
       </div>
