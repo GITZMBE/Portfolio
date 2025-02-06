@@ -30,108 +30,108 @@ export const Home = async () => {
           ]
       },
       {
-        "id": "cm5xq04nl2eld07l4vmn9tavm",
-        "title": "Front-end Developer Education",
-        "company": "EC Utbildning",
-        "location": "Växjö",
-        "startDate": "2023-03-13",
-        "endDate": "2025-01-24",
-        "description": "Front-end Developer Education.",
-        "responsibilities": [],
-        "skills": [
-          {
-              "id": "cm4a5gz5i1afz07l3puee45bd",
-              "title": "HTML",
-              "slug": "html",
-              "icon": null,
-              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-          },
-          {
-              "id": "cm4a5gby116q807lbv2cnlw5y",
-              "title": "CSS",
-              "slug": "css",
-              "icon": null,
-              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-          },
-          {
-              "id": "cm4a598ao13su07mk5ah7wvfh",
-              "title": "JavaScript",
-              "slug": "javascript",
-              "icon": null,
-              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-          },
-          {
-              "id": "cm4a4zmj7118w07lb830p2yh4",
-              "title": "React",
-              "slug": "react",
-              "icon": null,
-              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-          },
-          {
-              "id": "cm5xpz2nh2e3l07l41jv9xhck",
-              "title": "Angular",
-              "slug": "angular",
-              "icon": null,
-              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg"
-          },
-          {
-              "id": "cm4a59sdg16ha07l3d98rre67",
-              "title": "TypeScript",
-              "slug": "typescript",
-              "icon": null,
-              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-          },
-          {
-              "id": "cm4a5fpik18nz07l3se72w0jr",
-              "title": "C#",
-              "slug": "csharp",
-              "icon": null,
-              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
-          },
-          {
-              "id": "cm4a5j2jd1cvw07l334kv2mk0",
-              "title": "MongoDB",
-              "slug": "mongodb",
-              "icon": null,
-              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
-          },
-          {
-              "id": "cm4a562x2155j07l3oo4fepzn",
-              "title": "Docker",
-              "slug": "docker",
-              "icon": null,
-              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg"
-          },
-          {
-              "id": "cm4a547c312sv07lb8jj5a190",
-              "title": "PostgreSQL",
-              "slug": "postgresql",
-              "icon": null,
-              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg"
-          },
-          {
-              "id": "cm4a6w0q81pk007lbko8pzae3",
-              "title": "Tailwind CSS",
-              "slug": "tailwindcss",
-              "icon": null,
-              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-          },
-          {
-              "id": "cm4a5sos71e8f07mk9bponce6",
-              "title": "Trello",
-              "slug": "trello",
-              "icon": null,
-              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original-wordmark.svg"
-          }
-        ],
-        "achievements": [],
-        "tags": [
-          "Front-end",
-          "Back-end",
-          "Database",
-          "Object Oriented Programming",
-          "Agile"
-        ]
+          "id": "cm5xq04nl2eld07l4vmn9tavm",
+          "title": "Front-end Developer Education",
+          "company": "EC Utbildning",
+          "location": "Växjö",
+          "startDate": "2023-03-13",
+          "endDate": "2025-01-24",
+          "description": "Front-end Developer Education.",
+          "responsibilities": [],
+          "skills": [
+              {
+                  "id": "cm4a5gz5i1afz07l3puee45bd",
+                  "title": "HTML",
+                  "slug": "html",
+                  "icon": null,
+                  "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+              },
+              {
+                  "id": "cm4a5gby116q807lbv2cnlw5y",
+                  "title": "CSS",
+                  "slug": "css",
+                  "icon": null,
+                  "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+              },
+              {
+                  "id": "cm4a598ao13su07mk5ah7wvfh",
+                  "title": "JavaScript",
+                  "slug": "javascript",
+                  "icon": null,
+                  "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+              },
+              {
+                  "id": "cm4a4zmj7118w07lb830p2yh4",
+                  "title": "React",
+                  "slug": "react",
+                  "icon": null,
+                  "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+              },
+              {
+                  "id": "cm5xpz2nh2e3l07l41jv9xhck",
+                  "title": "Angular",
+                  "slug": "angular",
+                  "icon": null,
+                  "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg"
+              },
+              {
+                  "id": "cm4a59sdg16ha07l3d98rre67",
+                  "title": "TypeScript",
+                  "slug": "typescript",
+                  "icon": null,
+                  "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+              },
+              {
+                  "id": "cm4a5fpik18nz07l3se72w0jr",
+                  "title": "C#",
+                  "slug": "csharp",
+                  "icon": null,
+                  "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+              },
+              {
+                  "id": "cm4a5j2jd1cvw07l334kv2mk0",
+                  "title": "MongoDB",
+                  "slug": "mongodb",
+                  "icon": null,
+                  "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+              },
+              {
+                  "id": "cm4a562x2155j07l3oo4fepzn",
+                  "title": "Docker",
+                  "slug": "docker",
+                  "icon": null,
+                  "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg"
+              },
+              {
+                  "id": "cm4a547c312sv07lb8jj5a190",
+                  "title": "PostgreSQL",
+                  "slug": "postgresql",
+                  "icon": null,
+                  "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg"
+              },
+              {
+                  "id": "cm4a6w0q81pk007lbko8pzae3",
+                  "title": "Tailwind CSS",
+                  "slug": "tailwindcss",
+                  "icon": null,
+                  "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+              },
+              {
+                  "id": "cm4a5sos71e8f07mk9bponce6",
+                  "title": "Trello",
+                  "slug": "trello",
+                  "icon": null,
+                  "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original-wordmark.svg"
+              }
+          ],
+          "achievements": [],
+          "tags": [
+              "Front-end",
+              "Back-end",
+              "Database",
+              "Object Oriented Programming",
+              "Agile"
+          ]
       },
       {
           "id": "cm4bfz19g1sye07l5vsszwodk",
@@ -471,6 +471,27 @@ export const Home = async () => {
           "slug": "python",
           "icon": null,
           "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+      },
+      {
+          "id": "cm6duwc6402mb07mgbx10gegu",
+          "title": "FastAPI",
+          "slug": "fastapi",
+          "icon": null,
+          "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
+      },
+      {
+          "id": "cm6duxfoozvar07mnswbcygkz",
+          "title": "Astro",
+          "slug": "astro",
+          "icon": null,
+          "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg"
+      },
+      {
+          "id": "cm6te0s7hf1xj07l8zr8gsafx",
+          "title": "Flask",
+          "slug": "flask",
+          "icon": null,
+          "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
       }
     ],
     "projects": [
@@ -917,7 +938,7 @@ export const Home = async () => {
           "description": "A FullStack project with both a frontend and a backend created specifically for this project. The Frontend is made with Nextjs & TypeScript and the Backend uses ExpressJS to manage the api routes to the database which is currently under development and is locally hosting a PostgreSQL database using Docker. It is also featuring a login system using Next Auth. The point of the website is to be able to test your typing speed at the same time as you are leveling up your account and are able to compare your own score with other users on the site.",
           "githubLink": "https://github.com/GITZMBE/TypeSpeed",
           "banner": {
-              "url": "https://eu-west-2.graphassets.com/cm420b9lg0fus07mien4cgadm/cm5xn10rc5lxh08mk46odzl71",
+              "url": "https://eu-west-2.graphassets.com/cm420b9lg0fus07mien4cgadm/cm5xz9vh64jx907mog407tgfs",
               "width": 0,
               "height": 0
           },
@@ -1249,6 +1270,143 @@ export const Home = async () => {
               }
           ],
           "hostingLink": null
+      },
+      {
+        "id": "cm6te1bd7ez5v07mfm92tdmvv",
+        "title": "Inclusify For Everyone",
+        "slug": "inclusify-for-everyone",
+        "description": "This project is designed to support students who need extra help with their studies, particularly those who struggle with concentration during lectures or have difficulties with reading and writing. With this tool, students can record lectures, transcribe them into text, and generate quizzes based on the information. It provides an easier, more interactive way to learn and study, helping students stay engaged and achieve their academic goals.",
+        "githubLink": "https://github.com/GITZMBE/Inclusify",
+        "banner": {
+            "url": "https://eu-west-2.graphassets.com/cm420b9lg0fus07mien4cgadm/cm6tdyutxey8j07mfv8f7xdm3",
+            "width": 1918,
+            "height": 906
+        },
+        "logo": {
+            "url": "https://eu-west-2.graphassets.com/cm420b9lg0fus07mien4cgadm/cm6tdxyytexr507mf4fxm6s7f",
+            "width": 122,
+            "height": 96
+        },
+        "images": [
+            {
+                "url": "https://eu-west-2.graphassets.com/cm420b9lg0fus07mien4cgadm/cm6tdyut3f8cz07l5lail2hlf",
+                "width": 1917,
+                "height": 906
+            },
+            {
+                "url": "https://eu-west-2.graphassets.com/cm420b9lg0fus07mien4cgadm/cm6tdyutqey8e07mfrv5d30sa",
+                "width": 1916,
+                "height": 905
+            },
+            {
+                "url": "https://eu-west-2.graphassets.com/cm420b9lg0fus07mien4cgadm/cm6tdyutxey8j07mfv8f7xdm3",
+                "width": 1918,
+                "height": 906
+            },
+            {
+                "url": "https://eu-west-2.graphassets.com/cm420b9lg0fus07mien4cgadm/cm6tdyuu5f12v07l80rwrolwe",
+                "width": 1918,
+                "height": 906
+            },
+            {
+                "url": "https://eu-west-2.graphassets.com/cm420b9lg0fus07mien4cgadm/cm6tdyutcf8d607l507n9z6lv",
+                "width": 1919,
+                "height": 905
+            },
+            {
+                "url": "https://eu-west-2.graphassets.com/cm420b9lg0fus07mien4cgadm/cm6tdyut9f8d307l5odta0a8j",
+                "width": 1919,
+                "height": 908
+            },
+            {
+                "url": "https://eu-west-2.graphassets.com/cm420b9lg0fus07mien4cgadm/cm6tdyuurf13507l8y10u6eyx",
+                "width": 1918,
+                "height": 906
+            },
+            {
+                "url": "https://eu-west-2.graphassets.com/cm420b9lg0fus07mien4cgadm/cm6tdyuukf13007l8z1ct0bck",
+                "width": 1918,
+                "height": 907
+            },
+            {
+                "url": "https://eu-west-2.graphassets.com/cm420b9lg0fus07mien4cgadm/cm6tdyuuoey8o07mf1oirg1q1",
+                "width": 1919,
+                "height": 906
+            }
+        ],
+        "skills": [
+          {
+              "id": "cm6duwc6402mb07mgbx10gegu",
+              "title": "FastAPI",
+              "slug": "fastapi",
+              "icon": null,
+              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
+          },
+          {
+              "id": "cm5xqksz02y1307l7v5vgxhp8",
+              "title": "Python",
+              "slug": "python",
+              "icon": null,
+              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+          },
+          {
+              "id": "cm4a6w0q81pk007lbko8pzae3",
+              "title": "Tailwind CSS",
+              "slug": "tailwindcss",
+              "icon": null,
+              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+          },
+          {
+              "id": "cm4a59sdg16ha07l3d98rre67",
+              "title": "TypeScript",
+              "slug": "typescript",
+              "icon": null,
+              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+          },
+          {
+              "id": "cm4a562x2155j07l3oo4fepzn",
+              "title": "Docker",
+              "slug": "docker",
+              "icon": null,
+              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg"
+          },
+          {
+              "id": "cm4a547c312sv07lb8jj5a190",
+              "title": "PostgreSQL",
+              "slug": "postgresql",
+              "icon": null,
+              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg"
+          },
+          {
+              "id": "cm4a51dkk120307lbrg2csl23",
+              "title": "Nextjs",
+              "slug": "nextjs",
+              "icon": null,
+              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg"
+          },
+          {
+              "id": "cm4a552tp132h07lbw6pak668",
+              "title": "Prisma",
+              "slug": "prisma",
+              "icon": null,
+              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"
+          },
+          {
+              "id": "cm4a528kz129307lbhmogp0zv",
+              "title": "Vercel",
+              "slug": "vercel",
+              "icon": null,
+              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg"
+          },
+          {
+              "id": "cm6te0s7hf1xj07l8zr8gsafx",
+              "title": "Flask",
+              "slug": "flask",
+              "icon": null,
+              "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
+          }
+        ],
+        "hostingLink": "https://inclusifyforeveryone.vercel.app/"
       }
     ]
   };
